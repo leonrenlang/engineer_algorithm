@@ -1,0 +1,33 @@
+2023.09.22 10:29:55 INFO  Started: Metals version 1.0.0 in folders '/Users/alexren/Desktop/Code/online_projects/ScriptSpace/algorithm/基础/算法思想/动态规划/一维' for client Visual Studio Code 1.82.0.[0m
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+信息: Flyway Community Edition 9.20.1 by Redgate
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.license.VersionPrinter printVersion
+信息: See release notes here: https://rd.gt/416ObMi
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.license.VersionPrinter printVersion
+信息: 
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+信息: Database: jdbc:h2:file:/Users/alexren/Desktop/Code/online_projects/ScriptSpace/algorithm/基础/算法思想/动态规划/一维/.metals/metals (H2 2.1)
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+信息: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbValidate validate
+信息: Successfully validated 4 migrations (execution time 00:00.018s)
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+信息: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbMigrate migrateGroup
+信息: Current version of schema "PUBLIC": << Empty Schema >>
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+信息: Migrating schema "PUBLIC" to version "1 - Create tables"
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+信息: Migrating schema "PUBLIC" to version "2 - Server discovery"
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+信息: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+信息: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+九月 22, 2023 10:29:55 上午 org.flywaydb.core.internal.command.DbMigrate logSummary
+信息: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.022s)
+2023.09.22 10:29:55 INFO  time: initialize in 0.69s[0m
+2023.09.22 10:29:55 WARN  Build server is not auto-connectable.[0m
+2023.09.22 10:29:55 WARN  no build tool detected in workspace '/Users/alexren/Desktop/Code/online_projects/ScriptSpace/algorithm/基础/算法思想/动态规划/一维'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2023.09.22 10:30:50 INFO  Shutting down server[0m
+2023.09.22 10:30:50 INFO  shutting down Metals[0m
+2023.09.22 10:30:50 INFO  Exiting server[0m

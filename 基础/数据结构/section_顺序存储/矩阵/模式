@@ -1,0 +1,17 @@
+
+
+
+- 行列有序的矩阵中找目标元素
+- 旋转打印和zipzag打印
+- 各种旋转正方形矩阵
+
+
+
+将一个二维ndarray转换成一个二维列表
+    matrix = [list(row) for row in matrix]
+将二维ndarray中的每个数组转置
+    for idx in range(len(matrix)):
+        matrix[idx] = matrix[idx][::-1]
+一个空的二维矩阵
+    n, m = 3, 4
+    matrix = [[0] * 5 for _ in range(n)]

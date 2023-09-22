@@ -1,0 +1,56 @@
+
+
+'''
+回溯是一种特殊的递归问题，递归本质上是找到父问题和子问题解的关系，对于普通的递归问题，父问题和子问题之间的关系很直白，回溯问题通常有两个特点
+    - 而对于回溯问题，父问题和子问题和关系依赖于某段数据的内容，因此每次进行判断要将该段数据传入子问题
+    - 此外回溯问题的目标通常是寻找所有的可能，因此通常需要一个全局变量用于保存每种可能的解
+    - 常见的回溯问题：
+        给一个数字串，找全排列。给一个手机9键数字串，找可能打出的字母串
+   
+
+# 如何图形化回溯过程
+# - 回溯的过程是可以想象成一棵树，树的每一条路径都对应一个结果
+
+
+
+
+
+
+
+
+
+
+
+# 框架：
+# def backtrack(路径, 选择列表):
+#     if 满足结束条件:
+#         result.add(路径)
+#         return
+#
+#     for 选择 in 选择列表:
+#         做选择
+#         backtrack(路径, 选择列表)
+#         撤销选择
+# result = []
+# backtrack(路径， 选择列表）
+# return result
+
+
+def backtrack(路径， 选择列表）：
+    if 满足结束条件：
+        result.add(路径)
+        return
+    for 选择 in 选择列表：
+        路径.append(选择）
+        backtrack(路径， 选择列表）
+        路径.remove(选择)
+    result = []
+    backtrack(路径， 选择列表）
+    return result
+
+# 问题2：N皇后问题
+# def backtrack(board, row):
+#     for col in range(len(board)):
+#         if not isValid(board, row, col):
+#             continue
+#         board[row][col] = "Q"
