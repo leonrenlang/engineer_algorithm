@@ -5,6 +5,9 @@ class TreeNode:
         self.right = None
 
 
+
+
+
 class Solution:
     def buildTree(self, preorder, inorder):
         if len(inorder) == 0:
@@ -15,5 +18,3 @@ class Solution:
         root.left = self.buildTree(preorder[1:1 + inorder_idx], inorder[:inorder_idx])
         root.right = self.buildTree(preorder[1 + inorder_idx:], inorder[inorder_idx + 1:])
         return root
-
-
