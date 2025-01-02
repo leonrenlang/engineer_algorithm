@@ -1,9 +1,0 @@
-
-
-滑动窗口一般使用双指针进行滑动，这个很简单。
-难点在于，一般使用滑动窗口的问题需要构造一个巧妙的辅助结构。
-
-参考：
-340. 至多包含 K 个不同字符的最长子串： https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/?envType=study-plan-v2&envId=premium-algo-100
-487. 最大连续1的个数 II：  https://leetcode.cn/problems/max-consecutive-ones-ii/?envType=study-plan-v2&envId=premium-algo-100
-1100. 长度为 K 的无重复字符子串： https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/description/?envType=study-plan-v2&envId=premium-algo-100

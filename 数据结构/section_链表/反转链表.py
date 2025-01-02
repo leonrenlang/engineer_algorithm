@@ -20,9 +20,11 @@ def reverse_double_linklist(head):
         head = head.next
     return pre
 
+
 def copy_list(head):
     # 复制一个链表
-    if not head: return None
+    if not head:
+        return None
     copy_head = Node(head.val)
     p1 = head.next
     copy_rear = copy_head
