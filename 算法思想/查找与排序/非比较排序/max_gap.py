@@ -1,8 +1,8 @@
-
 # 用了桶的思想，但是是基于比较的排序
 
-# 给定一个数组，求如果排序之后，相邻两数的最大差值，要求时间复杂度O(N)，
-# 且要求不能用非基于比较的排序。
+# 给定一个数组，求如果排序之后，相邻两数的最大差值，要求时间复杂度O(N)，且要求不能用非基于比较的排序。
+
+
 # 注：其实这个题目是有意义的，如果是浮点数对象，就没法用计数排序
 #       如果数据是自定义对象，就不能用非基于比较排序的方法实现
 
@@ -25,32 +25,36 @@ def max_gap(nums):
     if len(nums) < 2:
         return 0
 
-    mini = nums[0]                               # 获取最大/小值
+    mini = nums[0]  # 获取最大/小值
     maxi = nums[0]
     for item in nums:
-        if item > maxi: maxi = item
-        if item < mini: mini = item
-    if mini == maxi: return 0
+        if item > maxi:
+            maxi = item
+        if item < mini:
+            mini = item
+    if mini == maxi:
+        return 0
 
-    length = len(nums)                          # 初始化length+1个桶
-    has_num = [0] * (length+1)
-    mins = [0] * (length+1)
-    maxs = [0] * (length+1)
-          
-    for i in range(len(nums)):                           # 入桶
+    length = len(nums)  # 初始化length+1个桶
+    has_num = [0] * (length + 1)
+    mins = [0] * (length + 1)
+    maxs = [0] * (length + 1)
+
+    for i in range(len(nums)):  # 入桶
         bid = bucket_idx(nums[i], length, mini, maxi)
         mins[bid] = nums[i] if has_num[bid] == False else min(nums[i], mins[bid])
         maxs[bid] = nums[i] if has_num[bid] == False else max(nums[i], maxs[bid])
         has_num[bid] = True
-    
-    res = 0                                #遍历桶，找到差值最大的
+
+    res = 0  # 遍历桶，找到差值最大的
     last_max = maxs[0]
-    for i in range(1, len(nums)+1):
+    for i in range(1, len(nums) + 1):
         if has_num[i]:
             res = max(res, mins[i] - last_max)
             last_max = maxs[i]
     return res
 
+
 if __name__ == "__main__":
-    lis = [12,2,4,4,4,24,24,4,21,2,456465]
+    lis = [12, 2, 4, 4, 4, 24, 24, 4, 21, 2, 456465]
     print(max_gap(lis))
